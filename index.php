@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once('lib/PageTemplate.php');
 # trick to execute 1st time, but not 2nd so you don't have an inf loop
 if (!isset($TPL)) {
@@ -9,6 +10,7 @@ if (!isset($TPL)) {
     exit;
 }
 ?>
+
 <p>
 <div class="row">
 
